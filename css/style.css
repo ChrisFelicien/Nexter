@@ -35,20 +35,34 @@ body {
 
 /* overall  */
 .container {
+  display: grid;
+  grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+  /* grid-template-columns: 20rem 1fr; */
+}
+header {
+  background-color: var(--color-grey-dark-1);
 }
 .sidebar {
+  background-color: var(--color-primary);
 }
 .realtors {
+  background-color: var(--color-secondary);
 }
 .features {
+  background-color: var(--color-grey-light-2);
 }
 .story__pictures {
+  background-color: yellowgreen;
 }
 .story__content {
+  background-color: orangered;
 }
 .homes {
+  background-color: #101d2c;
 }
 .gallery {
+  background-color: aquamarine;
 }
 .footer {
+  background-color: blueviolet;
 }
