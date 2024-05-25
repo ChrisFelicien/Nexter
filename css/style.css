@@ -35,20 +35,46 @@ body {
 
 /* overall  */
 .container {
+  display: grid;
+  grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+  grid-template-columns: 8rem 1fr repeat(8, minmax(min-content, 14rem)) 1fr;
+}
+
+header {
+  background-color: var(--color-secondary);
+  grid-area: 1 / 2 / 2/ 9;
 }
 .sidebar {
+  background-color: var(--color-primary);
+  grid-area: 1 / 1 / -1 / 2;
 }
 .realtors {
+  background-color: var(--color-secondary);
+  grid-area: 1 / 9 / 2 / -1;
 }
 .features {
+  background-color: var(--color-grey-light-2);
+  grid-area: 2 / 3 / 3 / 11;
 }
 .story__pictures {
+  background-color: yellowgreen;
+  grid-area: 3 / 2 / 4 / 7;
 }
 .story__content {
+  background-color: orangered;
+  grid-area: 3 / 7 / 4 / -1;
 }
 .homes {
+  background-color: blue;
+  color: #fff;
+
+  grid-area: 4 / 3 / 5 / 11;
 }
 .gallery {
+  background-color: aquamarine;
+  grid-area: 5 / 2 / 6 / -1;
 }
 .footer {
+  background-color: blueviolet;
+  grid-area: 6/ 2 / -1/ -1;
 }
