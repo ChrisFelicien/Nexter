@@ -37,7 +37,9 @@ body {
 .container {
   display: grid;
   grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
-  grid-template-columns: 8rem 1fr repeat(8, minmax(min-content, 14rem)) 1fr;
+  grid-template-columns:
+    8rem minmax(6rem, 1fr) repeat(8, minmax(min-content, 14rem))
+    minmax(6rem, 1fr);
 }
 
 header {
@@ -52,10 +54,21 @@ header {
   background-color: var(--color-secondary);
   grid-area: 1 / 9 / 2 / -1;
 }
+
+/* FEATURES SECTION START */
 .features {
-  background-color: var(--color-grey-light-2);
+  /* background-color: var(--color-grey-light-2); */
   grid-area: 2 / 3 / 3 / 11;
+  margin: 15rem 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6rem;
 }
+
+.feature {
+}
+
+/* FEATURES SECTION END */
 .story__pictures {
   background-color: yellowgreen;
   grid-area: 3 / 2 / 4 / 7;
