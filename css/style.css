@@ -186,7 +186,7 @@ header {
 .homes {
   margin: 15rem 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
   gap: 7rem;
   grid-area: 4 / 3 / 5 / 11;
   background-color: #fff;
@@ -215,11 +215,12 @@ header {
 
 .product__title {
   color: #fff;
+  text-wrap: nowrap;
   background-color: var(--color-secondary);
   padding: 1.5rem 2rem;
   text-align: center;
-  width: 70%;
-  margin: auto;
+
+  margin: 0 2rem;
   font-size: 1.4rem;
   font-weight: 500;
   letter-spacing: 0.2rem;
