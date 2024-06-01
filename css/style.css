@@ -332,6 +332,32 @@ header {
 
 /* END HOME GALLERY */
 .footer {
-  background-color: blueviolet;
+  background-color: var(--color-secondary);
   grid-area: 6/ 2 / -1/ -1;
+  padding: 7rem;
+  color: var(--color-grey-light-1);
+}
+
+footer .nav {
+  display: grid;
+  gap: 4rem;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  font-size: 1.6rem;
+  list-style: none;
+  margin-bottom: 4rem;
+}
+
+footer .nav .nav__link a {
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+}
+
+.copy {
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 4rem 10rem;
+  letter-spacing: 0.075rem;
+  line-height: 1.5;
+  color: var(--color-grey-light-2);
 }
