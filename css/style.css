@@ -343,20 +343,28 @@ footer .nav {
   display: grid;
   gap: 4rem;
   grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  align-items: center;
   font-size: 1.6rem;
   list-style: none;
   margin-bottom: 4rem;
 }
 
-footer .nav .nav__link a {
+footer .nav .nav__link a:link,
+footer .nav .nav__link a:visited {
   text-decoration: none;
   color: inherit;
   text-align: center;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  padding: 1.5rem;
+  transition: all 0.2s;
 }
 
 footer .nav .nav__link a:hover {
-  background-color: var(--color-secondary);
-  text-decoration: underline;
+  background-color: rgba(250, 250, 250, 0.05);
+  transform: translateY(0.07rem);
 }
 .copy {
   font-size: 1.4rem;
