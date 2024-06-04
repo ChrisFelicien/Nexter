@@ -277,7 +277,7 @@ header {
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(7, 1fr);
   gap: 1rem;
-  margin: 1rem;
+  padding: 1rem;
 }
 
 .grid__item-1 {
@@ -327,6 +327,7 @@ header {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
   object-position: center;
 }
 
@@ -353,6 +354,10 @@ footer .nav .nav__link a {
   text-align: center;
 }
 
+footer .nav .nav__link a:hover {
+  background-color: var(--color-secondary);
+  text-decoration: underline;
+}
 .copy {
   font-size: 1.4rem;
   text-align: center;
