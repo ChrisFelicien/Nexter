@@ -102,6 +102,45 @@ header .heading-3 {
   filter: brightness(50%);
 }
 
+.realtors {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 4rem;
+}
+.realtors__text {
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: 500;
+  color: var(--color-primary);
+}
+.realtor__users img {
+  width: 7rem;
+  height: 7rem;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 100rem;
+}
+
+.realtor__users {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.house__sold {
+  color: var(--color-grey-light-2);
+  font-size: 1.2rem;
+}
+
+.users__name {
+  font-weight: 600;
+  color: var(--color-grey-light-2);
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1rem;
+}
+
 .sidebar {
   background-color: var(--color-primary);
   grid-area: 1 / 1 / -1 / 2;
