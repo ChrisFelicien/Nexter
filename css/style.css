@@ -74,6 +74,7 @@ header {
 
 header .heading-3 {
   text-transform: uppercase;
+  margin-bottom: 0;
 }
 
 .header__seenOn-text::before,
